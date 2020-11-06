@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuba_bod_education
+    - node.type.cuba_ct_board_of_directors
+id: node.cuba_ct_board_of_directors.field_cuba_bod_education
+field_name: field_cuba_bod_education
+entity_type: node
+bundle: cuba_ct_board_of_directors
+label: Education
+description: 'Enter the position that the person holds at their University (i.e. BSc, MA).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

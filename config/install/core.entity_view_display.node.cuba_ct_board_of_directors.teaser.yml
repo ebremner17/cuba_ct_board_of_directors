@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_biography
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_education
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_picture
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_title
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_uni_position
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_university
+    - node.type.cuba_ct_board_of_directors
+  module:
+    - user
+id: node.cuba_ct_board_of_directors.teaser
+targetEntityType: node
+bundle: cuba_ct_board_of_directors
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cuba_bod_biography: true
+  field_cuba_bod_education: true
+  field_cuba_bod_picture: true
+  field_cuba_bod_title: true
+  field_cuba_bod_uni_position: true
+  field_cuba_bod_university: true
+  langcode: true

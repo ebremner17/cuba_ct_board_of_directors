@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuba_bod_university
+    - node.type.cuba_ct_board_of_directors
+id: node.cuba_ct_board_of_directors.field_cuba_bod_university
+field_name: field_cuba_bod_university
+entity_type: node
+bundle: cuba_ct_board_of_directors
+label: University
+description: 'Enter the University that the person is from.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

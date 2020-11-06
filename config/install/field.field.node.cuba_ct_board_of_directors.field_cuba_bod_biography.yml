@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuba_bod_biography
+    - node.type.cuba_ct_board_of_directors
+  module:
+    - text
+id: node.cuba_ct_board_of_directors.field_cuba_bod_biography
+field_name: field_cuba_bod_biography
+entity_type: node
+bundle: cuba_ct_board_of_directors
+label: Biography
+description: 'Enter the biography for the person.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

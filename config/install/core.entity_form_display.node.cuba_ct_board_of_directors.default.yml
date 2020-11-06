@@ -1,0 +1,105 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_biography
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_education
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_picture
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_title
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_uni_position
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_university
+    - node.type.cuba_ct_board_of_directors
+  module:
+    - media_library
+    - path
+    - text
+id: node.cuba_ct_board_of_directors.default
+targetEntityType: node
+bundle: cuba_ct_board_of_directors
+mode: default
+content:
+  field_cuba_bod_biography:
+    weight: 10
+    settings:
+      rows: 7
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_cuba_bod_education:
+    weight: 9
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cuba_bod_picture:
+    type: media_library_widget
+    weight: 11
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_cuba_bod_title:
+    weight: 6
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cuba_bod_uni_position:
+    weight: 8
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cuba_bod_university:
+    weight: 7
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

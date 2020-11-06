@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_biography
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_education
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_picture
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_title
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_uni_position
+    - field.field.node.cuba_ct_board_of_directors.field_cuba_bod_university
+    - node.type.cuba_ct_board_of_directors
+  module:
+    - text
+    - user
+id: node.cuba_ct_board_of_directors.default
+targetEntityType: node
+bundle: cuba_ct_board_of_directors
+mode: default
+content:
+  field_cuba_bod_biography:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cuba_bod_education:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cuba_bod_picture:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_cuba_bod_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cuba_bod_uni_position:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cuba_bod_university:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  links: true
